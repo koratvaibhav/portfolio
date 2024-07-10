@@ -1,0 +1,79 @@
+@keyframes morph{
+    0%,
+    100%{
+        border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+    }
+    30%{
+        border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+  }
+    60%{
+        border-radius: 90% 60% 60% 100% / 90% 100% 60% 60%;
+ }
+    80%{
+        border-radius: 69% 71% 66% 34% / 21% 30% 70% 79%;
+    }
+}
+@keyframes html{
+    0%{
+        width: 0;
+    }
+    100%{
+        width:90%;
+    }
+}
+@keyframes figma{
+    0%{
+        width: 0;
+    }
+    100%{
+        width:93%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0;
+    }
+    100%{
+        width:95%;
+    }
+}
+@keyframes java{
+    0%{
+        width: 0;
+    }
+    100%{
+        width:83%;
+    }
+}
+@keyframes rj{
+    0%{
+        width: 0;
+    }
+    100%{
+        width:80%;
+    }
+}
+@keyframes glow{
+    0%{
+        background: var(--bg-color);
+        box-shadow: none;
+    }
+    30%{
+        background: var(--bg-color);
+        box-shadow: none;
+    }
+    100%{
+        background: var(--hover-color);
+        box-shadow: var(--neon-box-shadow);
+    }
+}
+@keyframes slideanimation{
+    0%{
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

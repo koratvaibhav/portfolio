@@ -1,0 +1,163 @@
+@media(max-width:990px){
+    
+    header,
+    header.sticky{
+        padding: 15px 5%;
+    }
+    footer{
+        padding: 15px 5%;
+    }
+    #scrollUp {
+        padding: -10px 20px;
+}
+section{
+    padding: 50px 5%;
+}
+.img-about{
+    left:18px;
+}
+.liquid-shape{
+    top:-45%;
+    right: 20px;
+}
+.navlist a{
+    padding: 8px 15px;
+}
+:root{
+    --big-font:2.2rem;
+    --normal-font:1.8rem;
+    --neon-box-shadow:0 0 .8rem #12f7ff;
+    --h2-font:3rem;
+}
+.home-content{
+    margin-top: 5rem;
+}
+.social-icon{
+    margin-top: 2rem;
+}
+}
+
+@media(max-width:768px){
+    #menu-icon{
+        display: block;
+        transition: all .4s ease;
+    }
+    .about-heading{
+text-align: center;
+    }
+
+    #menu-icon.fa-x{
+        transform: rotate(-180deg);
+    }
+
+    .navlist{
+        display: flex;
+        position: absolute;
+        top: -1000px;
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        background: var(--bg-color);
+        text-align: left;
+        padding: 0 5%;
+        transition: all .4s ease;
+    }
+    .navlist a{
+        display: block;
+        padding-bottom:1rem ;
+        font-size: 1rem;
+    }
+    .navlist.open{
+        top: 100%;
+    }
+  
+    .home{
+        grid-template-columns: 1fr;
+    }
+    .home-img{
+        margin-top: 5rem;
+    }
+     
+    .about{
+        flex-direction: column-reverse;
+    }
+    .img-about{
+        left:12px;
+    }
+    .skill-main{
+        grid-template-columns: 1fr;
+    }
+    .fillter-buttons{
+        margin: 2.5rem 0;
+    }
+    footer p{
+        font-size: 1rem;
+    }
+    .img-about img{
+        width: 330px;
+    }
+}
+.liquid-shape{
+   top: 0%;
+}
+@media(max-width:410px){
+    html{
+        font-size: 80%;
+    }
+    .home-content{
+        max-width: 300px;
+    }
+    .info-box{
+        width: 300px;
+    }
+    .btn-box{
+        width: 330px;
+    }
+    footer p{
+        font-size: .8rem;
+    }
+    .liquid-shape{
+        width: 80%;
+        left:10%;
+       top: -20%;
+    }
+    .home-img{
+        margin-top: 8rem;
+    }
+    .img-about{
+        left:0px;
+    }
+    .fillter-buttons .button{
+        font-size: .8rem;
+    }
+    .img-about img{
+        width: 280px;
+    }
+    .info-about1,.info-about2, .info-about3{
+        display: none;
+    }
+
+}
+
+
+
+/* ................................................======Paralax=====.............. */
+.scroll-scale{
+    opacity: 0;
+    transform:scale(.9) ;
+    transition: all 2s;
+}
+.scroll-bottom{
+    opacity: 0;
+    transform: translateY(300px);
+    transition: 3s;
+}
+.scroll-top{
+    opacity: 0;
+    transform: translateY(-300px);
+    transition: 3s;
+}
+.show-items{
+    opacity: 1;
+    transform: translateX(0);
+}
